@@ -1,0 +1,261 @@
+{
+  "filename": "villains.json",
+  "collections": [
+    {
+      "name": "posts",
+      "data": [
+        {
+          "id": "5b8f8f73-9514-452b-b486-df86d57692ad",
+          "created": "2017-07-21T17:08:18.071Z",
+          "userId": "Dr Evil",
+          "body": "Build giant laser on the Moon and demand $1M",
+          "meta": {
+            "revision": 0,
+            "created": 1500660411696,
+            "version": 0
+          },
+          "$loki": 1
+        },
+        {
+          "id": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "created": "2017-07-21T17:09:19.271Z",
+          "userId": "Dr Evil",
+          "thumbsUpCount": 3,
+          "body": "Steal Austin Powers's mojo and conquer he world",
+          "meta": {
+            "revision": 2,
+            "created": 1500660411696,
+            "version": 0,
+            "updated": 1500903618614
+          },
+          "$loki": 2
+        },
+        {
+          "id": "092d2069-ca70-46d4-b197-ac97cfea9992",
+          "userId": "test",
+          "body": "hello",
+          "created": "2017-07-24T13:21:05.448Z",
+          "meta": {
+            "revision": 0,
+            "created": 1500902465448,
+            "version": 0
+          },
+          "$loki": 3
+        }
+      ],
+      "idIndex": [
+        1,
+        2,
+        3
+      ],
+      "binaryIndices": {},
+      "constraints": null,
+      "uniqueNames": [],
+      "transforms": {},
+      "objType": "posts",
+      "dirty": true,
+      "cachedIndex": null,
+      "cachedBinaryIndex": null,
+      "cachedData": null,
+      "adaptiveBinaryIndices": true,
+      "transactional": false,
+      "cloneObjects": false,
+      "cloneMethod": "parse-stringify",
+      "asyncListeners": false,
+      "disableChangesApi": true,
+      "autoupdate": false,
+      "serializableIndices": true,
+      "ttl": null,
+      "maxId": 3,
+      "DynamicViews": [],
+      "events": {
+        "insert": [
+          null
+        ],
+        "update": [
+          null
+        ],
+        "pre-insert": [],
+        "pre-update": [],
+        "close": [],
+        "flushbuffer": [],
+        "error": [],
+        "delete": [
+          null
+        ],
+        "warning": [
+          null
+        ]
+      },
+      "changes": []
+    },
+    {
+      "name": "ratings",
+      "data": [
+        {
+          "id": 0,
+          "postId": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "userId": "Austin Powers",
+          "value": 0,
+          "meta": {
+            "revision": 0,
+            "created": 1500660411696,
+            "version": 0
+          },
+          "$loki": 1
+        },
+        {
+          "id": "fdd44802-7cc7-4131-a2a5-3ca2d7659149",
+          "userId": "foo",
+          "postId": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "thumbsUp": true,
+          "meta": {
+            "revision": 0,
+            "created": 1500903360441,
+            "version": 0
+          },
+          "$loki": 2
+        },
+        {
+          "id": "70a518dc-3993-40fb-8fdf-dd7ed5110f75",
+          "userId": "foo",
+          "postId": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "thumbsUp": true,
+          "meta": {
+            "revision": 0,
+            "created": 1500903431687,
+            "version": 0
+          },
+          "$loki": 3
+        },
+        {
+          "id": "9957b649-1c27-4de1-ba72-b18cc0754acb",
+          "userId": "foo",
+          "postId": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "thumbsUp": true,
+          "meta": {
+            "revision": 0,
+            "created": 1500903497097,
+            "version": 0
+          },
+          "$loki": 4
+        },
+        {
+          "id": "89798f0c-9fb3-48e8-ae2e-fbd6224f8753",
+          "userId": "foo",
+          "postId": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "thumbsUp": true,
+          "meta": {
+            "revision": 0,
+            "created": 1500903583315,
+            "version": 0
+          },
+          "$loki": 5
+        },
+        {
+          "id": "2b60db0c-b29e-4076-9244-c3b1f725d9f9",
+          "userId": "foo",
+          "postId": "a",
+          "thumbsUp": true,
+          "meta": {
+            "revision": 0,
+            "created": 1500903591475,
+            "version": 0
+          },
+          "$loki": 6
+        },
+        {
+          "id": "16dfd274-e557-4012-9eb6-75e24cc5cae2",
+          "userId": "foo",
+          "postId": "902adfe9-8de7-4c10-808c-6ad1ccdc955c",
+          "thumbsUp": true,
+          "meta": {
+            "revision": 0,
+            "created": 1500903618612,
+            "version": 0
+          },
+          "$loki": 7
+        }
+      ],
+      "idIndex": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "binaryIndices": {},
+      "constraints": null,
+      "uniqueNames": [],
+      "transforms": {},
+      "objType": "ratings",
+      "dirty": true,
+      "cachedIndex": null,
+      "cachedBinaryIndex": null,
+      "cachedData": null,
+      "adaptiveBinaryIndices": true,
+      "transactional": false,
+      "cloneObjects": false,
+      "cloneMethod": "parse-stringify",
+      "asyncListeners": false,
+      "disableChangesApi": true,
+      "autoupdate": false,
+      "serializableIndices": true,
+      "ttl": null,
+      "maxId": 7,
+      "DynamicViews": [],
+      "events": {
+        "insert": [
+          null
+        ],
+        "update": [
+          null
+        ],
+        "pre-insert": [],
+        "pre-update": [],
+        "close": [],
+        "flushbuffer": [],
+        "error": [],
+        "delete": [
+          null
+        ],
+        "warning": [
+          null
+        ]
+      },
+      "changes": []
+    }
+  ],
+  "databaseVersion": 1.5,
+  "engineVersion": 1.5,
+  "autosave": true,
+  "autosaveInterval": 5000,
+  "autosaveHandle": null,
+  "throttledSaves": true,
+  "options": {
+    "autosave": true,
+    "autoload": true,
+    "serializationMethod": "normal",
+    "destructureDelimiter": "$<\n",
+    "recursiveWait": true,
+    "recursiveWaitLimit": false,
+    "recursiveWaitLimitDuration": 2000,
+    "started": 1500903593094
+  },
+  "persistenceMethod": "fs",
+  "persistenceAdapter": null,
+  "verbose": false,
+  "events": {
+    "init": [
+      null
+    ],
+    "loaded": [],
+    "flushChanges": [],
+    "close": [],
+    "changes": [],
+    "warning": []
+  },
+  "ENV": "NODEJS"
+}

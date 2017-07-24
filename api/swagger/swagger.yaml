@@ -1,0 +1,106 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Villan Blog Backend
+host: localhost:3000
+basePath: /
+# 
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /posts:
+    x-swagger-router-controller: posts
+    get:
+      description: Returns all posts
+      operationId: getPosts
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Post"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    post: 
+      description: Create new blog post
+      operationId: createPost
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: "#/definitions/PostPayload"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Post"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /rating:
+    x-swagger-router-controller: ratings
+    post:
+      description: Submit rating for a post
+      operationId: createRating
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: "#/definitions/Rating"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Rating"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+definitions:
+  PostPayload:
+    required:
+      - body
+    properties: 
+      userId:
+        type: string
+      body: 
+        type: string
+  Post:
+    properties: 
+      id:
+        type: string
+      body: 
+        type: string
+      userId:
+        type: string
+      created:
+        type: string
+      thumbsUpCount:
+        type: number
+      thumbsDownCount:
+        type: number
+  Rating:
+    required:
+      - postId
+      - thumbsUp
+    properties:
+      userId:
+        type: string
+      postId: 
+        type: string
+      thumbsUp:
+        type: boolean
+  ErrorResponse:
+    properties:
+      message:
+        type: string
