@@ -5,7 +5,7 @@
   "description": "New Swagger API Project",
   "keywords": [],
   "author": "",
-  "license": "",
+  "license": "UNLICENSED",
   "main": "app.js",
   "dependencies": {
     "express": "^4.12.3",
