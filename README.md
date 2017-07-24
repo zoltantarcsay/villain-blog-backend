@@ -2,6 +2,8 @@
 
 > Microblogging backend for sharing evil plans
 
+Requires Node.js v6.
+
 ## Getting Started
 
 ```bash
